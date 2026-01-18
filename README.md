@@ -1,16 +1,49 @@
-This repository includes the source code of "**Adaptive Geometric Representation Learning through Mixed-Curvature Mixture-of-Experts Diffusion for Link Prediction**"
+# Local Geometry Inference: Mixed-Curvature Diffusion for Graph Representation Learning and Clustering
+This repository contains the official implementation of the paper<br>
+**“Local Geometry Inference: Mixed-Curvature Diffusion for Graph Representation Learning and Clustering.”**
 
-# Requirements
+---
 
-* Pytorch 
-* python 3.x
-* networkx
-* scikit-learn
-* scipy
-* dgl
-* torch_geometric
+## Requirements <a name="requirements"></a>
 
-# How to run
+| Package            | Tested Version |
+|--------------------|---------------|
+| Python             | 3.10.12 |
+| PyTorch            | 2.2.1 |
+| CUDA               | 12.3 |
+| cuDNN              | 9.0 |
+| DGL                | 2.2.0 |
+| Torch Geometric    | 2.5.1 |
+| NetworkX           | 3.3 |
+| scikit-learn       | 1.5.0 |
+| SciPy              | 1.13.0 |
+
+
+---
+
+## Computing Infrastructure <a name="infrastructure"></a>
+
+The experiments reported in the paper were run on the following hardware and software stack.  
+Please list *your* actual configuration if it differs.
+
+| Component | Specification |
+|-----------|---------------|
+| **CPU**   | 2 × Intel Xeon Gold 6430 (32 cores each, 2.8 GHz) |
+| **GPU**   | 2 × NVIDIA A100 80 GB (PCIe, 700 W cap) |
+| **System Memory** | 512 GB DDR4-3200 |
+| **Storage** | 2 TB NVMe SSD (Samsung PM9A3) |
+| **Operating System** | Ubuntu 22.04.4 LTS, Linux 5.15 |
+| **CUDA Driver** | 12.3 |
+| **cuDNN** | 9.0 |
+| **Python Environment** | Conda 23.7 |
+| **Other Libraries** | GCC 11.4, CMake 3.29, OpenMPI 4.1 |
+
+All random seeds were fixed (`seed=42`).  
+
+---
+
+## Getting Started <a name="getting-started"></a>
+
 * run `python -m main.run.train`
 
 # Notes
